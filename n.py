@@ -1,8 +1,15 @@
+import os
+
+# Limit numeric library threads to keep memory usage stable on small instances.
+os.environ.setdefault('OPENBLAS_NUM_THREADS', '1')
+os.environ.setdefault('OMP_NUM_THREADS', '1')
+os.environ.setdefault('MKL_NUM_THREADS', '1')
+os.environ.setdefault('NUMEXPR_NUM_THREADS', '1')
+
 from flask import Flask, render_template, request, jsonify
 from flask import send_file
 import joblib
 import numpy as np
-import os
 import logging
 from datetime import datetime
 

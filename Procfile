@@ -1,1 +1,1 @@
-web: gunicorn n:app --timeout 120 --workers 1
+web: OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1 NUMEXPR_NUM_THREADS=1 gunicorn n:app --timeout 120 --workers 1
