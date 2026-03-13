@@ -13,51 +13,6 @@ A professional web application that uses machine learning to predict heart disea
 - **Accessibility** - WCAG 2.1 AA compliant with screen reader support, keyboard navigation, dark mode
 - **HCI-Optimized** - Implements 18+ human-computer interaction principles for superior UX
 
-## 🎯 Human-Computer Interaction (HCI) Principles
-
-This application implements comprehensive HCI principles for an excellent user experience:
-
-### **Error Prevention & Recovery**
-- ✅ **Input Validation**: Real-time validation with visual feedback
-- ✅ **Range Checking**: Age (18-120), Cholesterol (0-1000), BP (0-300) limits enforced
-- ✅ **Clear Error Messages**: Specific guidance on fixing validation errors
-- ✅ **Field Hints**: Helpful descriptions below each form field
-- ✅ **Focus Management**: Auto-focus on first invalid field
-
-### **User Feedback & Control**
-- ✅ **Progress Indicators**: Shows form progress (Step X of 4)
-- ✅ **Loading States**: Visual feedback during processing
-- ✅ **Success Messages**: Clear indication of successful submission
-- ✅ **Keyboard Shortcuts**: Ctrl+P for print, Ctrl+Enter to submit
-- ✅ **Undo Capability**: Easy navigation and re-entry
-
-### **Accessibility (WCAG 2.1 AA)**
-- ✅ **Screen Reader Support**: Semantic HTML with ARIA labels
-- ✅ **Keyboard Navigation**: Full form usable without mouse
-- ✅ **Skip Links**: Jump to main content for keyboard users
-- ✅ **Dark Mode**: Automatic dark theme support
-- ✅ **High Contrast**: Color-blind friendly and configurable contrast
-- ✅ **Reduced Motion**: Respects `prefers-reduced-motion` system setting
-
-### **Consistency & Clarity**
-- ✅ **Medical Terminology**: Accurate health metric labels (mg/dL, mm Hg)
-- ✅ **Uniform Design**: Consistent styling across all pages
-- ✅ **Visual Hierarchy**: Clear information organization
-- ✅ **Icon System**: Meaningful icons for quick scanning
-
-### **User Recognition & Efficiency**
-- ✅ **Visible Options**: All choices displayed in dropdowns
-- ✅ **Grouped Sections**: Related fields organized logically
-- ✅ **Touch-Friendly**: Large buttons (44×44px minimum)
-- ✅ **Responsive**: Works perfectly on desktop, tablet, mobile
-
-### **Trust & Security**
-- ✅ **Privacy Statement**: Clear "No data is stored" message
-- ✅ **Medical Disclaimer**: Important limitations displayed
-- ✅ **Secure POST**: Sensitive data not in URL
-- ✅ **Error Handling**: Graceful failures without exposing system details
-
-**For detailed HCI documentation, see [HCI_PRINCIPLES.md](HCI_PRINCIPLES.md)**
 
 ## Project Structure
 
@@ -175,9 +130,6 @@ Returns the patient assessment form
 - **Output**: HTML page with risk prediction and recommendations
 - **Required Fields**: All form fields must be filled
 
-## Important Notes
-
-⚠️ **Disclaimer**: This application is for informational purposes only and is not a medical diagnosis. Always consult with qualified healthcare professionals for medical evaluation.
 
 ## Features Explained
 
@@ -201,20 +153,6 @@ Returns the patient assessment form
 - Touch-friendly interface elements
 - Optimized for all screen sizes
 
-## Troubleshooting
-
-### Models Not Found
-Ensure all `.sav` files are in the project root directory.
-
-### Port Already in Use
-If port 5000 is in use, modify `n.py`:
-```python
-app.run(debug=True, host='127.0.0.1', port=5001)  # Change port
-```
-
-### CORS Issues
-The application uses relative URLs. For production, update the form action in `patient_details.html`.
-
 ## Future Enhancements
 
 - User authentication and history tracking
@@ -226,7 +164,7 @@ The application uses relative URLs. For production, update the form action in `p
 
 ## License
 
-This project is for educational purposes.
+Created by Vijayasooriyan Kamarajah.
 
 ## Support
 
