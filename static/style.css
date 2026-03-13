@@ -1,0 +1,143 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #e74c3c;
+    --secondary-color: #3498db;
+    --success-color: #27ae60;
+    --warning-color: #d68910;
+    --danger-color: #c0392b;
+    --dark-color: #2c3e50;
+    --light-color: #ecf0f1;
+    --text-color: #222;
+    --text-secondary: #555;
+    --text-muted: #666;
+    --border-color: #bdc3c7;
+    --shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+/* Utility Classes */
+.text-primary { color: var(--primary-color); }
+.text-secondary { color: var(--secondary-color); }
+.text-success { color: var(--success-color); }
+.text-warning { color: var(--warning-color); }
+.text-danger { color: var(--danger-color); }
+
+.bg-primary-light { background-color: rgba(231, 76, 60, 0.1); }
+.bg-secondary-light { background-color: rgba(52, 152, 219, 0.1); }
+.bg-success-light { background-color: rgba(39, 174, 96, 0.1); }
+
+/* Responsive utilities */
+.container-fluid { padding: 0; }
+
+@media (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    html {
+        font-size: 13px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fade { animation: fadeIn 0.5s ease; }
+.animate-slide-up { animation: slideInUp 0.5s ease; }
+.animate-slide-left { animation: slideInLeft 0.5s ease; }
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #333;
+}
+
+/* Dark Mode Support */
+@media (prefers-color-scheme: dark) {
+    :root {
+        --text-color: #e8e8e8;
+        --text-secondary: #b0b0b0;
+        --text-muted: #888;
+        --border-color: #444;
+    }
+    
+    body {
+        background-color: #1a1a1a;
+        color: var(--text-color);
+    }
+    
+    .form-control, .form-select {
+        background-color: #2a2a2a;
+        border-color: #444;
+        color: var(--text-color);
+    }
+    
+    .form-control:focus, .form-select:focus {
+        background-color: #333;
+        border-color: var(--secondary-color);
+        color: var(--text-color);
+    }
+    
+    .card {
+        background-color: #2a2a2a;
+        border-color: #444;
+        color: var(--text-color);
+    }
+    
+    .bg-primary-light, .bg-secondary-light, .bg-success-light {
+        opacity: 0.8;
+    }
+}
