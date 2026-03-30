@@ -174,3 +174,5 @@ For issues or questions, refer to the inline code comments and Flask documentati
 
 **Created**: 2026
 **Last Updated**: March 13, 2026
+
+MIT license applied
