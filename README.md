@@ -139,7 +139,7 @@ Returns the patient assessment form
 - Required field validation
 
 ### Risk Prediction Pipeline
-1. Collect patient health data via form
+1. Collect patient health data from form
 2. Encode categorical variables (gender, smoking, etc.)
 3. Apply quantile transformation to data
 4. Apply polynomial feature transformation
@@ -172,7 +172,7 @@ For issues or questions, refer to the inline code comments and Flask documentati
 
 ---
 
-**Created**: 2026
+**Created**: by Vijayasooriyan on 2026 
 **Last Updated**: March 13, 2026
 
 MIT license applied
